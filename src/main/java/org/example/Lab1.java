@@ -233,7 +233,56 @@ public class Lab1
         }else {
             System.out.println("not equal");
         }
+
+
+        //_______________________________________________________________________________________________________________________________________________\\
+
+
+        //Q-14 java program that reads and tells if number negative positive or 0
+
+        int x14 = sc.nextInt();
+        if (x14 > 0){
+            System.out.println("positive number");
+        }else if( x14< 0){
+            System.out.println("negative number");
+        }else{
+            System.out.println("zero");
+        }
+
+
+        //_______________________________________________________________________________________________________________________________________________\\
+
+
+        //Q-15
+
+        int x15 = 0;
+        for ( ; ; ){
+            System.out.print("enter a number or -1 to stop: ");
+            x15 = sc.nextInt();
+            if (x15 == -1){
+                System.out.println("program stopped!");
+                break;
+            }
+            if (x15 < 0){
+                System.out.println(x15 + " negative");
+            }else if (x15 > 0){
+                System.out.println(x15 + " positive");
+            }else {
+                System.out.println(x15 + " zero");
+            }
+
+
+            //_______________________________________________________________________________________________________________________________________________\\
+
+
+            //Q-16
+
+        }
+
     }
+
+
+
 
 
 }
