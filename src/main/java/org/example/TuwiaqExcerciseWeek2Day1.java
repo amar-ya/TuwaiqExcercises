@@ -147,7 +147,7 @@ public class TuwiaqExcerciseWeek2Day1
 //        }else{
 //            System.out.println("true");
 //        }
-//        System.out.println(arr6 + " " + arrToCompair7);
-//
+
+
     }
 }

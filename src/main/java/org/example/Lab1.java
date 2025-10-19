@@ -331,7 +331,7 @@ public class Lab1
 //                }
 //            }
 //            System.out.println("the latter a has come " + count + " times in this sentences");
-        }
+//        }
 
 
     }
