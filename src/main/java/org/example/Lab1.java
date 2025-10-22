@@ -8,7 +8,7 @@ public class Lab1
     public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
-        //Q-1 write a program that add, subtracts, multiplay , and divide 2 input numbers
+//        Q-1 write a program that add, subtracts, multiplay , and divide 2 input numbers
 
 //        System.out.print("please give value to X: ");
 //        int x = sc.nextInt();
@@ -184,7 +184,7 @@ public class Lab1
 //        if (x11 >= y11) System.out.println(x11 + " >= " + y11);
 //        if (x11 < y11) System.out.println(x11 + " < " + y11);
 //        if (x11 <= y11) System.out.println(x11 + " <= " + y11);
-//
+
 //
 //        //_______________________________________________________________________________________________________________________________________________\\
 //
@@ -320,21 +320,21 @@ public class Lab1
 //            //_______________________________________________________________________________________________________________________________________________\\
 //
 //
-//            //Q-18 java code that count the latter a come in the input
+            //Q-18 java code that count the latter a come in the input
 //
 //            System.out.print("please write a sentence or a word: ");
 //            String sentence18 = sc.nextLine().toLowerCase();
 //            int count18 = 0;
-//            for (int i = 0; i < sentence.length(); i++) {
-//                if (sentence.charAt(i) == 'a') {
-//                    count++;
+//            for (int i = 0; i < sentence18.length(); i++) {
+//                if (sentence18.charAt(i) == 'a') {
+//                    count18++;
 //                }
 //            }
-//            System.out.println("the latter a has come " + count + " times in this sentences");
-//        }
+//            System.out.println("the latter a has come " + count18 + " times in this sentences");
+         }
 
 
-    }
+
     }
 
 

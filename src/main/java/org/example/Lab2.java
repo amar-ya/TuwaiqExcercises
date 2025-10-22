@@ -184,11 +184,11 @@ public class Lab2 {
 
     //Q-6 method returns random number that takes its intial number and largest from the user
 
-    public static void randomNumber(int initial,int largest){
-        Random random = new Random();
-        int start = initial, end = largest;
-        System.out.println(random.nextInt(start, end+1));
-    }
+//    public static void randomNumber(int initial,int largest){
+//        Random random = new Random();
+//        int start = initial, end = largest;
+//        System.out.println(random.nextInt(start, end+1));
+//    }
 
     //Q-7 method check the strength of a password based on given criteria
     public static int checkLength(String passowrd){
@@ -201,7 +201,6 @@ public class Lab2 {
         }
     }
     public static int checkSpecialCharacter(String password){
-        String regex = "! @ # $ % ^ & * ( ) - _ + = { } [ ] : ; \" ' < > , . ? / \\ | ~ `";
         if (password.matches(".*[^A-Za-z0-9].*")){
             return 2;
         }else {
