@@ -9,29 +9,31 @@ public class TuwaiqExcerciseWeek2Day4
     public static void main(String[] args)throws InputMismatchException, IllegalArgumentException, ArithmeticException {
         Scanner sc = new Scanner(System.in);
 
+        //Please remove the code you want to test from the comment one by one just to avoid any variable naming conflict
+
         //Q-1
 
-//        int x = 0;
-//        int y = 0;
+//        int x1 = 0;
+//        int y1 = 0;
 //        try{
 //            System.out.print("please give value to X: ");
-//            x = sc.nextInt();
+//            x1 = sc.nextInt();
 //            System.out.print("please give value to Y: ");
-//            y = sc.nextInt();
-//            int sum = x + y, sub = x - y, mul = x * y, div = x / y;
-//            System.out.println(x + " + " + y + " = " + sum);
-//            System.out.println(x + " - " + y + " = " + sub);
-//            System.out.println(x + " * " + y + " = " + mul);
-//            System.out.println(x + " / " + y + " = " + div);
+//            y1 = sc.nextInt();
+//            int sum = x1 + y1, sub = x1 - y1, mul = x1 * y1, div = x1 / y1;
+//            System.out.println(x1 + " + " + y1 + " = " + sum);
+//            System.out.println(x1 + " - " + y1 + " = " + sub);
+//            System.out.println(x1 + " * " + y1 + " = " + mul);
+//            System.out.println(x1 + " / " + y1 + " = " + div);
 //        }catch (InputMismatchException e){
 //            System.out.println("the value should be an integer");
 //        }catch ( ArithmeticException a){
 //            System.out.println("the value should not be zero");
 //        }
-
-
-        //Q-2
-
+//
+//
+//        //Q-2
+//
 //        System.out.print("which number you want to see its multiplication table?: ");
 //        try{
 //            int num = sc.nextInt();
@@ -46,9 +48,9 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (ArithmeticException a){
 //            System.out.println("any number multiplied to Zero equals Zero");
 //        }
-
-        //Q-3
-
+//
+//        //Q-3
+//
 //       try{
 //           System.out.print("please give a radius for the circle: ");
 //           double r = sc.nextDouble();
@@ -65,9 +67,9 @@ public class TuwaiqExcerciseWeek2Day4
 //       }catch (ArithmeticException e){
 //           System.out.println("how can it be a circle if its radius equals to zero?");
 //       }
-
-        //Q-4
-
+//
+//        //Q-4
+//
 //        System.out.println("please tell me how many numbers you want to enclude in this set");
 //        int nOfSet = sc.nextInt(), total = 0, count = 0;
 //        for (int i = 1; i <= nOfSet; i++) {
@@ -105,10 +107,10 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (ArithmeticException e){
 //            System.out.println("the size of the array cannot be Zero");
 //        }
-
-
-        //Q-5
-
+//
+//
+//        //Q-5
+//
 //        try{
 //            System.out.print("please give value to X: ");
 //            int x5 = sc.nextInt();
@@ -131,9 +133,9 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (InputMismatchException e){
 //            System.out.println("the value should be an integer");
 //        }
-
-        //Q-6
-
+//
+//        //Q-6
+//
 //        try{
 //            System.out.print("input a word: ");
 //            String word = sc.nextLine();
@@ -148,9 +150,9 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (InputMismatchException e){
 //            System.out.println("the word should contain letters only");
 //        }
-
-        //Q-7
-
+//
+//        //Q-7
+//
 //        System.out.print("please give number to check if even or odd: ");
 //        try {
 //            int x7 = sc.nextInt();
@@ -167,9 +169,9 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (ArithmeticException e){
 //            System.out.println("Zero is not odd nor even");
 //        }
-
-        //Q-8
-
+//
+//        //Q-8
+//
 //        System.out.print("what is the temperature in celsius right now: ");
 //        try{
 //            double c = sc.nextInt();
@@ -178,9 +180,9 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (InputMismatchException  e){
 //            System.out.println("temperature are represented in numbers");
 //        }
-
-        //Q-9
-
+//
+//        //Q-9
+//
 //        try{
 //            System.out.print("please input a sentence: ");
 //            String sentence = sc.nextLine();
@@ -202,17 +204,17 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (IllegalArgumentException e) {
 //            System.out.println("the sentence is too short or index is bigger than its length");
 //        }
-
-        //Q-10
-
+//
+//        //Q-10
+//
 //        try{
 //            perimeterInRectangle();
 //        }catch (ArithmeticException e){
 //            System.out.println("the height and width should be positive and not zero");
 //        }
-
-        //Q-11
-
+//
+//        //Q-11
+//
 //        try{
 //            System.out.print("please input X: ");
 //            int x11 = sc.nextInt();
@@ -228,10 +230,10 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (InputMismatchException e){
 //            System.out.println("wrong input");
 //        }
-
-        //Q-12
-
-
+//
+//        //Q-12
+//
+//
 //        System.out.print("please input seconds: ");
 //        try{
 //            int seconds = sc.nextInt();
@@ -251,10 +253,10 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (InputMismatchException e){
 //            System.out.println("wrong input");
 //        }
-
-
-        //Q-13
-
+//
+//
+//        //Q-13
+//
 //       try{
 //           System.out.print("please input X: ");
 //           int x13 = sc.nextInt();
@@ -272,9 +274,9 @@ public class TuwaiqExcerciseWeek2Day4
 //       }catch (InputMismatchException e) {
 //           System.out.println("wrong input");
 //       }
-
-        //Q-14
-
+//
+//        //Q-14
+//
 //        try{
 //            int x14 = sc.nextInt();
 //            if (x14 > 0) {
@@ -289,10 +291,10 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (IllegalArgumentException e){
 //            System.out.println("zero cant be negative or positive");
 //        }
-
-        //Q-15
-
-
+//
+//        //Q-15
+//
+//
 //        for (; ; ) {
 //            try{
 //                negativeOrPositive();
@@ -305,9 +307,9 @@ public class TuwaiqExcerciseWeek2Day4
 //                break;
 //            }
 //        }
-
-        //Q-16
-
+//
+//        //Q-16
+//
 //        System.out.print("please enter an integer to reverse it: ");
 //        try{
 //            int x = sc.nextInt();
@@ -332,9 +334,9 @@ public class TuwaiqExcerciseWeek2Day4
 //        }catch (RuntimeException e){
 //            System.out.println("a single number cant be reversed");
 //        }
-
-        //Q-17
-
+//
+//        //Q-17
+//
 //        int x17 = 0, biggest = 0, smallest = 0;
 //        System.out.print("please give a number: ");
 //
@@ -370,8 +372,8 @@ public class TuwaiqExcerciseWeek2Day4
 //        System.out.println("The smallest number is " + smallest);
 
 
-        //Q-18
-
+//        //Q-18
+//
 
 //        System.out.print("please write a sentence or a word: ");
 //        try{
