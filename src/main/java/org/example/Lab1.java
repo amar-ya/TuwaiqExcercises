@@ -10,7 +10,7 @@ public class Lab1
         Random rand = new Random();
 //        Q-1 write a program that add, subtracts, multiplay , and divide 2 input numbers
 
-//        System.out.print("please give value to X: ");
+//         System.out.print("please give value to X: ");
 //        int x = sc.nextInt();
 //        System.out.print("please give value to Y: ");
 //        int y = sc.nextInt();
