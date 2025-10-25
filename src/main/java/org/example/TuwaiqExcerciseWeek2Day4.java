@@ -395,7 +395,11 @@ public class TuwaiqExcerciseWeek2Day4
 //        }
 
 
-
+        try{
+            System.out.println(sumOfInts(-1,1));
+        }catch (RuntimeException e){
+            System.out.println(e.getMessage());
+        }
 
 
     }
@@ -414,6 +418,17 @@ public class TuwaiqExcerciseWeek2Day4
             System.out.println(x15 + " positive");
         } else {
             throw new IllegalArgumentException();
+        }
+    }
+
+    public static int sumOfInts(int a, int b){
+        if (a > 0 && b > 0) {
+            return a+b;
+        }else if(a <= 0 && b <= 0){
+            int temp = -a+(-b);
+            throw new ArithmeticException(temp+"" );
+        }else {
+            return a*b;
         }
     }
 
