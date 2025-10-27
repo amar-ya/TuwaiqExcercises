@@ -1,10 +1,9 @@
 package org.example;
 
-import javax.management.relation.RelationTypeNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class TuwaiqExcerciseWeek2Day4
+public class TuwaiqExerciseWeek2Day4
 {
     public static void main(String[] args)throws InputMismatchException, IllegalArgumentException, ArithmeticException {
         Scanner sc = new Scanner(System.in);

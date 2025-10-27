@@ -1,4 +1,4 @@
-package org.example.TuwaiqExcerciseWeek3Day3;
+package org.example.TuwaiqExerciseWeek3Day1;
 
 public class Employee
 {

@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner;
 
-public class TuwaiqExcerciseDay4
+public class TuwaiqExerciseDay4
 {
 
     public static void main(String []args)

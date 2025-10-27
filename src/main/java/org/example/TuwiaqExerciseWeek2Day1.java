@@ -1,10 +1,8 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class TuwiaqExcerciseWeek2Day1
+public class TuwiaqExerciseWeek2Day1
 {
     public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
