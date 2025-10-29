@@ -291,6 +291,7 @@ public class interactiveMain
         b1.setPrice(205.6);
         b1.setTitle("OCA SE 24");
         b1.setISNB("s1297518jk1");
+        b1.setReview(new ArrayList<Review>());
         b2.setTitle("OCA SE 8");
         b2.setAuteur("Ammar");
         b3.setAuteur("Saleh");
@@ -377,6 +378,28 @@ public class interactiveMain
                 for (Media m : user.getShoppingCart()){
                     System.out.println(m.recommendSimilarMedia(DBForMedia())+"\n");
                 }
+            }else if(choice == 6){
+                //note this is working but only for purchased items that has review and its != null,
+                // but for the short in time i didnt make it all !=null you can try it on novel numer 1
+                if (user.getPurchaseMediaList().isEmpty()){
+                    System.out.println("you can only review purchased media");
+                    continue;
+                }
+                int j = 1, revNum;
+                for (Media m : user.getPurchaseMediaList()){
+                    System.out.println(j+". "+m.toString());
+                    j++;
+                }
+                revNum = sc.nextInt();
+                sc.nextLine();
+                System.out.print("please enter the comment in the review: ");
+                String comment = sc.nextLine();
+                System.out.print("please give a rating out of 5: ");
+                int rating = sc.nextInt();
+                sc.nextLine();
+                Review r = new Review(user.getUsername(), comment, rating);
+                System.out.println(r);
+                user.getPurchaseMediaList().get(revNum-1).addReview(r);
             }else {
                 working = false;
             }
@@ -399,7 +422,8 @@ public class interactiveMain
         System.out.println("3. Display cart");
         System.out.println("4. checkOut cart");
         System.out.println("5. recommendation based on items in cart");
-        System.out.println("6. Exit");
+        System.out.println("6. leave a review on item");
+        System.out.println("7. Exit");
         int choice = sc.nextInt();
         return choice;
     }

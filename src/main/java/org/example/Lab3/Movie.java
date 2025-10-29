@@ -8,9 +8,10 @@ import java.util.Set;
 public class Movie extends Media
 {
     private int duration;
-
-
-
+    private ArrayList<Review> review;
+    public void addReview(Review review){
+        this.review.add(review);
+    }
 
 
     public void watch(User user){

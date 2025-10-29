@@ -6,7 +6,10 @@ import java.util.List;
 public class Music extends Media
 {
     private String artist;
-
+    private ArrayList<Review> review;
+    public void addReview(Review review){
+        this.review.add(review);
+    }
     public String getArtist() {
         return super.getAuteur();
     }

@@ -6,6 +6,10 @@ public class Media
 {
     private String title, auteur, ISNB;
     private double Price;
+    private ArrayList<Review> review;
+    public void addReview(Review review){
+        this.review.add(review);
+    }
 
 
     public Media() {
@@ -57,6 +61,7 @@ public class Media
         }
         return similarMedia;
     }
+
 
     public String getISNB() {
         return ISNB;
