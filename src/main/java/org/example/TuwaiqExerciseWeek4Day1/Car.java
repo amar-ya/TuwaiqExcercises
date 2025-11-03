@@ -1,5 +1,7 @@
 package org.example.TuwaiqExerciseWeek4Day1;
 
+import org.example.Project2.Route;
+
 public class Car implements Vehicle
 {
 
@@ -14,6 +16,8 @@ public class Car implements Vehicle
         this.duration = duration;
         this.model = model;
     }
+
+
 
     public int getDuration() {
         return duration;
