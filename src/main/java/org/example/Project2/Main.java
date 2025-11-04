@@ -30,13 +30,14 @@ public class Main
         cars.add(new Car("ksa 4", 6, new Route("Riyadh", "Yanbu", 260)));
         cars.add(new Car("ksa 5", 8, new Route("Jeddah", "Riyadh", 250)));
         cars.add(new Car("ksa 6", 0, new Route("Jeddah", "Riyadh", 250)));
-        boolean Logout = false, exit = false;
+        boolean exit = false;
         String[] coupons = {"ksa1", "nationalDay2025","nd25"};
 
 
 
         while (!exit){
-            System.out.println("1. Login or Register\n2. Exit");
+            boolean Logout = false;
+            System.out.println("1. Login or Register \n2. login to Admin\n3. Exit");
             String choice1 = sc.nextLine();
             if (choice1.equals("1")){
                 System.out.print("please enter your account name: ");
@@ -138,6 +139,75 @@ public class Main
                     }
 
                 }
+            }else if(choice1.equals("2")){
+                boolean admin = true;
+                while (admin){
+                    System.out.println("1.list of all users \n2. list of subscribers \n3. list of users with coupons \n4. list of users without coupon\n5.list of cars\n6. remove user\n7. remove car\n8. exit admin");
+                    ArrayList<Passenger> subs = new ArrayList<>();
+                    ArrayList<Passenger> coups = new ArrayList<>();
+                    ArrayList<Passenger> noCoups = new ArrayList<>();
+                    for (Passenger p: passengers){
+                        if (p instanceof Subscribers){
+                            subs.add(p);
+                        }else if (p instanceof NonSubscribers && ((NonSubscribers) p).getCoupon()){
+                            coups.add(p);
+                        }else{
+                            noCoups.add(p);
+                        }
+                    }
+                    String k = sc.nextLine();
+                    switch (k){
+                        case "1": {
+                            for (Passenger p: passengers){
+                                System.out.println(p);
+                            }
+                            break;
+                        } case "2":{
+                            for (Passenger p: subs){
+                                System.out.println(p);
+                            }
+                            break;
+                        }case "3":{
+                            for (Passenger p: coups){
+                                System.out.println(p);
+                            }
+                            break;
+                        } case "4":{
+                            for (Passenger p: noCoups){
+                                System.out.println(p);
+                            }
+                            break;
+                        } case "5":{
+                            for(Car c: cars){
+                                System.out.println(c);
+                            }
+                            break;
+                        } case "6":{
+                            System.out.print("please enter the username of the user you want to remove: ");
+                            String name = sc.nextLine();
+                            for (Passenger p: passengers){
+                                if (p.getName().equals(name)){
+                                    passengers.remove(p);
+                                }
+                            }
+                            break;
+                        } case "7":{
+                            System.out.print("please enter the code of the car you want to remove: ");
+                            String code = sc.nextLine();
+                            for (Car c : cars){
+                                if (c.getCode().equals(code)){
+                                    cars.remove(c);
+                                }
+                                break;
+                            }
+                            break;
+                        }
+                        default:{
+                            admin = false;
+                            System.out.println("GoodBye Admin");
+                        }
+                    }
+                }
             }else{
                 System.out.println("Thank you for using KADDAD system goodbye!");
                 exit = true;
@@ -195,7 +265,6 @@ public class Main
         if(exist.equals("no")){
             System.out.println("you are not registered a new non-subscribed account has been made");
             person = new NonSubscribers(id++, username, false);
-            passengers.add(person);
         }
 
         return person;
